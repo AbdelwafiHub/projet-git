@@ -1,0 +1,485 @@
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC
+$ pwd
+/d/Master/S3/devops/GLCC
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC
+$ mkdir projet-git
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC
+$ ls
+projet-git/
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC
+$ git config --global --list
+user.name=Abdessamad ABDELWAFI
+user.email=tawiri@gmail.com
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC
+$ git config --global user.email "abdessamad.abdelwafi@uit.ac.ma"
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC
+$ git config --global --list
+user.name=Abdessamad ABDELWAFI
+user.email=abdessamad.abdelwafi@uit.ac.ma
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC
+$ ls
+projet-git/
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC
+$ git init
+Initialized empty Git repository in D:/Master/
+S3/devops/GLCC/.git/
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC (master)
+$ ls
+projet-git/
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC (master)
+$ touch index.html^C
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC (master)
+$ ls
+projet-git/
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "
+git add" to track)
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC (master)
+$ cd projet-git/
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ touch index.html
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ touch style.css
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ ls
+index.html  style.css
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what
+will be committed)
+        ./
+
+nothing added to commit but untracked files pr
+esent (use "git add" to track)
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ git init
+Initialized empty Git repository in D:/Master/
+S3/devops/GLCC/projet-git/.git/
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what
+will be committed)
+        index.html
+        style.css
+
+nothing added to commit but untracked files pr
+esent (use "git add" to track)
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ git add index.html style.css
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+        new file:   style.css
+
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ rm --cashed style.css
+rm: unknown option -- cashed
+Try 'rm --help' for more information.
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ rm --cached style.css
+rm: unknown option -- cached
+Try 'rm --help' for more information.
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ git rm --cached style.css
+rm 'style.css'
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what
+will be committed)
+        style.css
+
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ git rm --cached index.html
+rm 'index.html'
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what
+will be committed)
+        index.html
+        style.css
+
+nothing added to commit but untracked files pr
+esent (use "git add" to track)
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ git add .
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+        new file:   style.css
+
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ git commit -m"premier commit du projet git"
+[master (root-commit) 7dc275c] premier commit
+du projet git
+ 2 files changed, 0 insertions(+), 0 deletions
+(-)
+ create mode 100644 index.html
+ create mode 100644 style.css
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will
+ be committed)
+  (use "git restore <file>..." to discard chan
+ges in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/
+or "git commit -a")
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ git diff index.html
+diff --git a/index.html b/index.html
+index e69de29..2d022b8 100644
+--- a/index.html
++++ b/index.html
+@@ -0,0 +1,2 @@
++Bonjour
++tout le monde
+\ No newline at end of file
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ git diff index.html
+diff --git a/index.html b/index.html
+index e69de29..80e78fb 100644
+--- a/index.html
++++ b/index.html
+@@ -0,0 +1,4 @@
++Mon titre
++Bonjour
++tout le monde
++fin ici
+\ No newline at end of file
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ git diff index.html
+diff --git a/index.html b/index.html
+index e69de29..5e5ca32 100644
+--- a/index.html
++++ b/index.html
+@@ -0,0 +1,4 @@
++Mon titre
++
++tout le monde
++fin ici
+\ No newline at end of file
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ git diff index.html
+diff --git a/index.html b/index.html
+index e69de29..9fa640c 100644
+--- a/index.html
++++ b/index.html
+@@ -0,0 +1,3 @@
++Mon titre
++tout le monde
++fin ici
+\ No newline at end of file
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ git diff index.html
+diff --git a/index.html b/index.html
+index e69de29..80e78fb 100644
+--- a/index.html
++++ b/index.html
+@@ -0,0 +1,4 @@
++Mon titre
++Bonjour
++tout le monde
++fin ici
+\ No newline at end of file
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ git add index.html
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ git commit -m"Ajout texte à index.html"
+[master ddd7d1a] Ajout texte à index.html
+ 1 file changed, 4 insertions(+)
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working
+directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit
+-a")
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ git diff index.html
+diff --git a/index.html b/index.html
+index 80e78fb..5e5ca32 100644
+--- a/index.html
++++ b/index.html
+@@ -1,4 +1,4 @@
+ Mon titre
+-Bonjour
++
+ tout le monde
+ fin ici
+\ No newline at end of file
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ git diff index.html
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ git log
+commit ddd7d1a65b781c8f3b4ba3007617779970cb3d53 (HEAD -> mast
+er)
+Author: Abdessamad ABDELWAFI <abdessamad.abdelwafi@uit.ac.ma>
+Date:   Mon Nov 3 17:43:12 2025 +0100
+
+    Ajout texte à index.html
+
+commit 7dc275c8802e1f1dac5860c2dc238c384bec0c3e
+Author: Abdessamad ABDELWAFI <abdessamad.abdelwafi@uit.ac.ma>
+Date:   Mon Nov 3 17:35:56 2025 +0100
+
+    premier commit du projet git
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ git diff index.html
+diff --git a/index.html b/index.html
+index 80e78fb..9fa640c 100644
+--- a/index.html
++++ b/index.html
+@@ -1,4 +1,3 @@
+ Mon titre
+-Bonjour
+ tout le monde
+ fin ici
+\ No newline at end of file
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ git add index.html
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ git commit -m"suppression du mot bonjour"
+[master 8d1dfaf] suppression du mot bonjour
+ 1 file changed, 1 deletion(-)
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ git log
+commit 8d1dfaf3054cd06b040c5cb64a918d5e1c8be54c (HEAD -> mast
+er)
+Author: Abdessamad ABDELWAFI <abdessamad.abdelwafi@uit.ac.ma>
+Date:   Mon Nov 3 17:50:43 2025 +0100
+
+    suppression du mot bonjour
+
+commit ddd7d1a65b781c8f3b4ba3007617779970cb3d53
+Author: Abdessamad ABDELWAFI <abdessamad.abdelwafi@uit.ac.ma>
+Date:   Mon Nov 3 17:43:12 2025 +0100
+
+    Ajout texte à index.html
+
+commit 7dc275c8802e1f1dac5860c2dc238c384bec0c3e
+Author: Abdessamad ABDELWAFI <abdessamad.abdelwafi@uit.ac.ma>
+Date:   Mon Nov 3 17:35:56 2025 +0100
+
+    premier commit du projet git
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ git log -n 1
+commit 8d1dfaf3054cd06b040c5cb64a918d5e1c8be54c (HEAD -> mast
+er)
+Author: Abdessamad ABDELWAFI <abdessamad.abdelwafi@uit.ac.ma>
+Date:   Mon Nov 3 17:50:43 2025 +0100
+
+    suppression du mot bonjour
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ git show ^C
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ git show ddd7d1a65b781c8f3b4ba3007617779970cb3d53
+commit ddd7d1a65b781c8f3b4ba3007617779970cb3d53
+Author: Abdessamad ABDELWAFI <abdessamad.abdelwafi@uit.ac.ma>
+Date:   Mon Nov 3 17:43:12 2025 +0100
+
+    Ajout texte à index.html
+
+diff --git a/index.html b/index.html
+index e69de29..80e78fb 100644
+--- a/index.html
++++ b/index.html
+@@ -0,0 +1,4 @@
++Mon titre
++Bonjour
++tout le monde
++fin ici
+\ No newline at end of file
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ git checkout ^C
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git (master)
+$ git checkout ddd7d1a65b781c8f3b4ba3007617779970cb3d53
+Note: switching to 'ddd7d1a65b781c8f3b4ba3007617779970cb3d53'
+.
+
+You are in 'detached HEAD' state. You can look around, make e
+xperimental
+changes and commit them, and you can discard any commits you
+make in this
+state without impacting any branches by switching back to a b
+ranch.
+
+If you want to create a new branch to retain commits you crea
+te, you may
+do so (now or later) by using -c with the switch command. Exa
+mple:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detach
+edHead to false
+
+HEAD is now at ddd7d1a Ajout texte à index.html
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git ((ddd7d1a...))
+$ git log -n 1
+commit ddd7d1a65b781c8f3b4ba3007617779970cb3d53 (HEAD)
+Author: Abdessamad ABDELWAFI <abdessamad.abdelwafi@uit.ac.ma>
+Date:   Mon Nov 3 17:43:12 2025 +0100
+
+    Ajout texte à index.html
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git ((ddd7d1a...))
+$ git checkout ddd7d1a65b781c8f3b4ba3007617779970cb3d53
+HEAD is now at ddd7d1a Ajout texte à index.html
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git ((ddd7d1a...))
+$ git log
+commit ddd7d1a65b781c8f3b4ba3007617779970cb3d53 (HEAD)
+Author: Abdessamad ABDELWAFI <abdessamad.abdelwafi@uit.ac.ma>
+Date:   Mon Nov 3 17:43:12 2025 +0100
+
+    Ajout texte à index.html
+
+commit 7dc275c8802e1f1dac5860c2dc238c384bec0c3e
+Author: Abdessamad ABDELWAFI <abdessamad.abdelwafi@uit.ac.ma>
+Date:   Mon Nov 3 17:35:56 2025 +0100
+
+    premier commit du projet git
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git ((ddd7d1a...))
+$ git checkout 8d1dfaf3054cd06b040c5cb64a918d5e1c8be54c
+Previous HEAD position was ddd7d1a Ajout texte à index.html
+HEAD is now at 8d1dfaf suppression du mot bonjour
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git ((8d1dfaf...))
+$ git log
+commit 8d1dfaf3054cd06b040c5cb64a918d5e1c8be54c (HEAD, master
+)
+Author: Abdessamad ABDELWAFI <abdessamad.abdelwafi@uit.ac.ma>
+Date:   Mon Nov 3 17:50:43 2025 +0100
+
+    suppression du mot bonjour
+
+commit ddd7d1a65b781c8f3b4ba3007617779970cb3d53
+Author: Abdessamad ABDELWAFI <abdessamad.abdelwafi@uit.ac.ma>
+Date:   Mon Nov 3 17:43:12 2025 +0100
+
+    Ajout texte à index.html
+
+commit 7dc275c8802e1f1dac5860c2dc238c384bec0c3e
+Author: Abdessamad ABDELWAFI <abdessamad.abdelwafi@uit.ac.ma>
+Date:   Mon Nov 3 17:35:56 2025 +0100
+
+    premier commit du projet git
+
+genie logiciel@SAMAD-PC MINGW64 /d/Master/S3/devops/GLCC/projet-git ((8d1dfaf...))
+$ git config --global --list
+user.name=Abdessamad ABDELWAFI
+user.email=abdessamad.abdelwafi@uit.ac.ma
